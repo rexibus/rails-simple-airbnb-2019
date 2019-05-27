@@ -1,0 +1,25 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-flat {
+  border: 1px solid;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.card-detail {
+
+}
+
+.card-content {
+
+}
+
+.card-more-info {
+
+}
+
