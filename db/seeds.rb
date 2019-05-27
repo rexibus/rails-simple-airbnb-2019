@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts 'Cleaning database...'
+Flat.destroy_all
+
+puts 'Creating restaurants...'
+
 Flat.create!(
   name: 'Light & Spacious Garden Flat London',
   address: '10 Clifton Gardens London W9 1DT',
@@ -37,3 +42,5 @@ Flat.create!(
   price_per_night: 115,
   number_of_guests: 6
 )
+
+puts 'Finished!'
