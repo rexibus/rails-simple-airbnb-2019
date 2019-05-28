@@ -1,23 +1,27 @@
 
-<div class="container">
+<div class="container mt-3">
 
-  <h1>All our flats (<%= @flats.count %>)</h1>
-
+  <div class="intro">
+    <h1>All our flats (<%= @flats.count %>)</h1>
+  </div>
   <div class="cards">
-    <div class="card-flat">
-      <% @flats.each do |flat| %>
+    <% @flats.each do |flat| %>
+      <div class="card-flat">
         <div class="card-content">
-          <h2><%= flat.name %></h2>
-          <p><%= flat.address %></p>
+          <div class="flat-card-title">
+            <h4><%= flat.name %></h4>
+          </div>
+          <div><p><%= flat.address %></p></div>
           <div class="card-detail">
             <p>C:<%= flat.number_of_guests %></p>
             <p>P:<%= flat.price_per_night %></p>
           </div>
+        </div>
         <div class="card-more-info">
           <%= link_to "More info", flat_path(flat) %>
         </div>
-       <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 
 </div>
