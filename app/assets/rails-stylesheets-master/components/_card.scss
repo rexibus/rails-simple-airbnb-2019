@@ -59,7 +59,7 @@
 }
 
 
-.flat-card-more-info {
+.flat-card-more {
   display: flex;
   align-content: center;
   background: white;
@@ -67,7 +67,16 @@
   font-size: 16px;
 }
 
+#flat-card-more-edit {
+margin-left: 16px;
+}
+
+#flat-card-more-delete {
+margin-left: 16px;
+}
+
 .material-icons {
   font-size: 23px;
 }
+
 

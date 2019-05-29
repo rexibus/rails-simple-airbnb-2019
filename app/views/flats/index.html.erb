@@ -26,8 +26,21 @@
             </div>
           </div>
         </div>
-        <div class="flat-card-more-info">
-          <%= link_to "More info", flat_path(flat) %>
+        <div class="flat-card-more">
+          <div id="flat-card-more-info">
+            <%= link_to "More info", flat_path(flat) %>
+          </div>
+          <div id="flat-card-more-edit">
+            <%= link_to edit_flat_path(flat), class: "text-warning" do  %>
+            Edit
+            <% end %>
+          </div>
+          <div id="flat-card-more-edit">
+            <%= link_to flat_path(flat), method: :delete,
+            data: { confirm: "Are you sure?" }, class: "text-danger" do  %>
+            Delete
+            <% end %>
+          </div>
         </div>
       </div>
     <% end %>
